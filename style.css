@@ -278,9 +278,9 @@ footer p {
     margin: auto;
 }
 
-/* -------------------------------------------------- */
+/* ----------------------------------------  des flex wrap: wrap ; sont ajouté pour la responsivité-----------------------------*/
 .modal {
-    position: fixed;
+    position: fixed;/*Elle est positionnée de manière fixe (position: fixed) pour rester en place même lorsque la page est défilée*/
     top: 0;
     left: 25%;
     margin: auto;
@@ -288,16 +288,16 @@ footer p {
     height: 100%;
     background-color: rgb(192, 188, 188);
     display: none;
-    justify-content: center;
+    justify-content: center;/*Le contenu de la fenêtre est centré verticalement et horizontalement avec justify-content: center et align-items: center.*/
     align-items: center;
-    overflow: auto;
-    z-index: 1;
+    overflow: auto;/*a propriété overflow: auto permet de faire défiler le contenu de la fenêtre si celui-ci dépasse de la zone visible*/
+    z-index: 1;/*La propriété z-index définit la profondeur de la fenêtre modale, de sorte qu'elle apparaît au-dessus de tous les autres éléments de la page*/
     border-radius: 5%;
 }
 
 .modal img {
-    width: 400px;
-    height: 300px;
+    width: 500px;
+    height: 400px;
     display: block;
     align-items: center;
     margin: 50px auto;
@@ -306,18 +306,55 @@ footer p {
 .modal p {
     text-align: center;
     margin: 50px;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: bold;
 }
-
-@media screen and (max-width: 480px) {
-    /* .cardPlaces {
-        margin-top: 20px;
-    } */
+@media screen and (max-width: 900px) {/*on apllique quelque nouvelles proprieté quand l'ecran est inferieur à 900px et 700px */
     .modal {
-        top: 10%;
+        top: 0%;
         width: 90%;
-        height: 80%;
+        height: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .modal img {
+        width: 60%;
+        height: auto;
+        margin: 50px auto;
+    }
+
+    .modal p {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 700px) {/*on apllique quelque nouvelles proprieté quand l'ecran est entre 700px et 480px*/
+    .modal {
+        top: 5%;
+        width: 80%;
+        height: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .modal img {
+        width: 60%;
+        height: auto;
+        margin: 50px auto;
+    }
+
+    .modal p {
+        font-size: 0.9em;
+    }
+}
+@media screen and (max-width: 480px) {/*on apllique quelque nouvelles proprieté quand l'ecran est inferieur à 480px*/
+    .cardPlaces {
+        margin-top: 20px;
+    }
+    .modal {
+        top: 5%;
+        width: 75%;
+        height: 90%;
         left: 50%;
         transform: translateX(-50%);
     }
