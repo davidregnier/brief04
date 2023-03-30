@@ -147,18 +147,20 @@ section:nth-child(3){
     color: #000;
 }
 #carrousel{
-    width: 400px;
+    width: 190px;
     overflow: hidden;
     position: relative;
+    margin: 0;
 }
 #carrousel #container{
     width: 1600px;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 .card,
 .card img{
     width: 190px;
+    
 }
 .cardContent{
     margin: 10px;
@@ -185,6 +187,10 @@ section:nth-child(3){
 }
 .btn#g{
     right: 0;
+    font-size: 2em;
+}
+.btn#d{
+    font-size: 2em;
 }
 .btn:hover{
     transform: scale(1.2);
@@ -224,3 +230,48 @@ footer{
 footer p{
     margin: auto;
 }
+/* -------------------------------------------------- */
+.modal {
+position: fixed;
+top: 0;
+left: 25%;
+margin: auto;
+width: 50%;
+height: 100%;
+background-color: rgb(192, 188, 188);
+display: none;
+justify-content: center;
+align-items: center;
+overflow: auto;
+z-index: 1;
+border-radius: 5%;
+} 
+.modal img{
+width: 400px;
+height: 300px;
+display: block;
+align-items: center;
+margin: 50px auto;
+}
+.modal p{
+text-align: center;
+margin: 50px;
+font-size: 1.5em;
+font-weight: bold;
+}
+@media screen and (max-width: 400px) {
+    .modal {
+      width: 90%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .modal img {
+      width: 80%;
+      height: auto;
+      margin: 50px auto;
+    }
+    .modal p{
+        font-size: 1em;
+    }
+  }
