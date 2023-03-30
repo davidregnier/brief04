@@ -1,55 +1,64 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 nav,
 .logo,
 nav ul,
 .form,
 .form div,
 form div,
-footer{
+footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-nav{
+
+nav {
     background: #f1f1f1;
     padding: 15px;
     text-transform: uppercase;
 }
-nav ul{
+
+nav ul {
     list-style: none;
     gap: 30px;
 }
+
 .form a,
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: black;
     font-weight: 800;
 }
-nav ul li:first-child a{
+
+nav ul li:first-child a {
     color: #ee5057;
     border-bottom: solid 1px #ee5057;
 }
+
 .form a,
-.form p{
+.form p {
     color: #ee5057;
 }
+
 section:first-child,
-.reservasion{
+.reservasion {
     display: grid;
     place-items: center;
 }
-.reservasion{
+
+.reservasion {
     width: 100%;
     min-height: 50vh;
     background: no-repeat url(img/bg-img.jpg);
     background-size: cover;
 }
-.reservasion .form{
+
+.reservasion .form {
     background: #f1f1f1;
     width: 50%;
     min-width: 265px;
@@ -57,47 +66,58 @@ section:first-child,
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
 .help,
-form{
+form {
     width: 90%;
 }
-.form div{
+
+.form div {
     padding: 10px;
 }
+
 .form div input[type="submit"],
-.form div:first-child input{
+.form div:first-child input {
     min-width: 215px;
 }
-.form div select{
+
+.form div select {
     min-width: 115px;
 }
+
 ::placeholder,
 select,
-input{
+input {
     color: #ee5057;
     font-family: 'FontAwesome', Arial, Helvetica, sans-serif;
 }
-input{
+
+input {
     width: 30%;
 }
-select{
+
+select {
     width: 20%;
 }
+
 select,
-input{
+input {
     height: 50px;
 }
-input[type="submit"]{
+
+input[type="submit"] {
     border: #ee5057;
     background: #ee5057;
     color: #f1f1f1;
 }
-section:first-child{
+
+section:first-child {
     background: #ee5057;
     color: #f1f1f1;
     min-height: 30vh;
 }
-section:first-child button{
+
+section:first-child button {
     background: #ee5057;
     color: #f1f1f1;
     border: solid 1px #f1f1f1;
@@ -106,11 +126,13 @@ section:first-child button{
     height: 50px;
     cursor: pointer;
 }
-section:nth-child(2){
+
+section:nth-child(2) {
     flex-wrap: wrap;
 }
+
 section:nth-child(2),
-section:nth-child(3){
+section:nth-child(3) {
     background: #f1f1f1;
     color: #ee5057;
     min-height: 50vh;
@@ -118,54 +140,66 @@ section:nth-child(3){
     justify-content: center;
     align-items: center;
 }
-section:nth-child(2) div{
+
+section:nth-child(2) div {
     width: 20%;
     min-width: 300px;
     padding: 20px;
     text-align: center;
 }
-section:nth-child(2) div h2{
+
+section:nth-child(2) div h2 {
     font-size: 3em;
     padding: 20px;
 }
-section:nth-child(2) div h3{
+
+section:nth-child(2) div h3 {
     font-size: 1.5em;
     padding: 20px;
 }
-section:nth-child(2) div p{
+
+section:nth-child(2) div p {
     padding: 20px;
 }
-section:nth-child(2) div a{
+
+section:nth-child(2) div a {
     text-decoration: none;
     font-size: 1.2em;
     color: #ee5057;
     padding: 20px;
     font-weight: 800;
 }
-section:nth-child(3){
+
+section:nth-child(3) {
     background: #e2d2d2;
     color: #000;
+    flex-wrap: wrap;
 }
-#carrousel{
+
+#carrousel {
     width: 190px;
     overflow: hidden;
     position: relative;
     margin: 0;
+
 }
-#carrousel #container{
+
+#carrousel #container {
     width: 1600px;
     display: flex;
-    /* justify-content: space-between; */
 }
+
 .card,
-.card img{
+.card img {
     width: 190px;
-    
+
 }
-.cardContent{
+
+.cardContent {
     margin: 10px;
 }
-.card button{
+
+.card button {
     width: 100%;
     padding: 10px;
     color: #f1f1f1;
@@ -173,10 +207,12 @@ section:nth-child(3){
     border: none;
     cursor: pointer;
 }
-.cardContent p{
+
+.cardContent p {
     margin: 10px;
 }
-.btn{
+
+.btn {
     position: absolute;
     top: 50%;
     color: #f1f1f1;
@@ -185,93 +221,114 @@ section:nth-child(3){
     background: #bebebeac;
     cursor: pointer;
 }
-.btn#g{
+
+.btn#g {
     right: 0;
     font-size: 2em;
 }
-.btn#d{
+
+.btn#d {
     font-size: 2em;
 }
-.btn:hover{
+
+.btn:hover {
     transform: scale(1.2);
 }
-.cardPlaces{
+
+.cardPlaces {
     width: 265px;
     margin-left: 10px;
 }
-.cardContinent{
+
+.cardContinent {
     padding: 10px;
     background: #f1f1f1;
 }
-.continent{
+
+.continent {
     margin-bottom: 10px;
     height: 70px;
     background: #cdcdcd;
     display: flex;
 }
-.continent img{
+
+.continent img {
     height: 70px;
 }
-.continent h3{
+
+.continent h3 {
     margin: auto;
     margin-top: 25px;
 }
-.headCard{
+
+.headCard {
     color: #f1f1f1;
     background: #ee5057;
     padding: 5px;
 }
-footer{
+
+footer {
     background: #ee5057;
     min-height: 80px;
     width: 100%;
     color: #f1f1f1;
 }
-footer p{
+
+footer p {
     margin: auto;
 }
+
 /* -------------------------------------------------- */
 .modal {
-position: fixed;
-top: 0;
-left: 25%;
-margin: auto;
-width: 50%;
-height: 100%;
-background-color: rgb(192, 188, 188);
-display: none;
-justify-content: center;
-align-items: center;
-overflow: auto;
-z-index: 1;
-border-radius: 5%;
-} 
-.modal img{
-width: 400px;
-height: 300px;
-display: block;
-align-items: center;
-margin: 50px auto;
+    position: fixed;
+    top: 0;
+    left: 25%;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(192, 188, 188);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    z-index: 1;
+    border-radius: 5%;
 }
-.modal p{
-text-align: center;
-margin: 50px;
-font-size: 1.5em;
-font-weight: bold;
+
+.modal img {
+    width: 400px;
+    height: 300px;
+    display: block;
+    align-items: center;
+    margin: 50px auto;
 }
-@media screen and (max-width: 400px) {
+
+.modal p {
+    text-align: center;
+    margin: 50px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+    /* .cardPlaces {
+        margin-top: 20px;
+    } */
     .modal {
-      width: 90%;
-      left: 50%;
-      transform: translateX(-50%);
+        top: 10%;
+        width: 90%;
+        height: 80%;
+        left: 50%;
+        transform: translateX(-50%);
     }
-    
+
     .modal img {
-      width: 80%;
-      height: auto;
-      margin: 50px auto;
+        width: 80%;
+        height: auto;
+        margin: 50px auto;
     }
-    .modal p{
-        font-size: 1em;
+
+    .modal p {
+        font-size: 0.8em;
     }
-  }
+}
